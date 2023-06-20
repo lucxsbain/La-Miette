@@ -6,7 +6,16 @@ background-color: #000000;
 	text-align: center;
 	Background-color: #000000;
 }
+.nav{
+	text-align: center;
+	Background-color: #000000;
+}
 #nav  Li{
+	display: inline;
+	font-size: 150%;
+	list-style-type: none;
+}
+.nav  Li{
 	display: inline;
 	font-size: 150%;
 	list-style-type: none;
@@ -16,8 +25,15 @@ background-color: #000000;
 	padding: 0 0.4%;
 	text-decoration: none;
 	}
-
+.nav a{
+	color: #FFFFFF;
+	padding: 0 0.4%;
+	text-decoration: none;
+	}
 #nav a:hover {
+	color: #FFFF1F;
+	}
+.nav a:hover {
 	color: #FFFF1F;
 	}
 p{
