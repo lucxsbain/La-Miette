@@ -23,6 +23,9 @@ body{
 p{
 	color: #ffffff;
 }
+.para{
+	padding-bottom: 2px;
+}
 #located{
 	text-align: center;
 	padding: 70px;
@@ -81,8 +84,12 @@ p{
 /* Show the dropdown menu on hover */
 .dropdown:hover
 .dropdown-content {display: block;}
-#information-book {
-	width: 50%;
+.information-book {
+	width: 47%;
+	background-color: #ff3f5f;
+	padding: 5px 10px ;
+	position: absolute;
+	border-radius: 7px;
 }
 br {
   margin-bottom: 100px;
