@@ -2,41 +2,103 @@
 <html><!-- InstanceBegin template="/Templates/La Miette.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-	<!-- InstanceBeginEditable name="title" -->
+<!-- InstanceBeginEditable name="title" -->
 <title>Reservations - La Miette</title>
-	<!-- InstanceEndEditable -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<!-- Bootstrap -->
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<!-- InstanceEndEditable -->
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
+<!-- choose one --> 
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-	<div id="header">
-  <nav class="nav">
-			<ul>
-				<li><a href="home.html" title="Home">Home</a></li>
-				<li><a href="about.html" title="About">About</a></li>
-				<div class="dropdown">
-					<li class="dropbtn"><a href="menu.html" title="Menu">Menu</a></li>
-				  <div class="dropdown-content">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
-				  </div>
-				</div>
-				<li><a href="reservations.html" title="Reservations">Reservations</a></li>
-				<li><a href="locate.html" title="Locate Us">Locate Us</a></li>
-				<li><a href="contact.html" title="Contact" class="page">Contact</a></li>
-			</ul>
-	  </nav>
-</div>
+<nav class="navbar">
+	<ul class="menu">
+		<li class="item"><a href="home.html" class="link"><i data-feather="home"></i><span>Home</span></a></li>
+		<li class="item"><a href="menu.html" class="link"><i data-feather="menu"></i><span>Menu</span></a></li>
+		<li class="item"><a href="about.html" class="link"><i data-feather="info"></i><span>About</span></a></li>
+		<li class="item"><a href="locate.html" class="link"><i data-feather="map"></i><span>Locate Us</span></a></li>
+		<li class="item"><a href="reservations.html" class="link"><i data-feather="bookmark"></i><span>Book</span></a></li>
+		<li class="item"><a href="#" class="link"><i data-feather="message-square"></i><span>Contact Us</span></a></li>
+	</ul>
+</nav>
+<div class="content">
+	<img class="header" src="images/header.png" alt="Header">
 	<!-- InstanceBeginEditable name="content" -->
-		<main>
-<section class="information-book"><p class="para">We are located 57 Toorak Road West, South Yarra. The Bar Menu is available daily from noon onwards for walk-in only.</p>
-<p class="para">Our early sittings have a maximum of two hours - therefore if you are wanting a longer sitting time we suggest you book a later time slot.</p>
-<p class="para">Our children's menu is available for children under 12. Due to our limited space we are unable to accommodate prams.</p>
-<p class="para">We do not allow any outside food or beverage to be consumed on our premises. You can order one of our Celebration Cakes with at least 48 hours notice before your reservation.</p>
-<p>A 10% surcharge applies on weekends, a 15% surcharge applies on all public holidays. Card transactions incur a 1.5% surcharge.</p>
-</section>
-		</main>
-	<!-- InstanceEndEditable -->
+	<div class="main">
+		<div class="booking-info">We are located 57 Toorak Road West, South Yarra. The Bar Menu is available daily from noon onwards for walk-in only.
+			<hr>
+			Our early sittings have a maximum of two hours - therefore if you are wanting a longer sitting time we suggest you book a later time slot.
+			<hr>
+			Our children's menu is available for children under 12. Due to our limited space we are unable to accommodate prams.
+			<hr>
+			We do not allow any outside food or beverage to be consumed on our premises. You can order one of our Celebration Cakes with at least 48 hours notice before your reservation.
+			<hr>
+			A 10% surcharge applies on weekends, a 15% surcharge applies on all public holidays. Card transactions incur a 1.5% surcharge. </div>
+		<div class="booking-form">
+			<form>
+				<div class="form-group"> <span class="form-label">Your Name</span>
+					<input class="form-control" type="text" placeholder="Enter your name">
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group"> <span class="form-label">Date</span>
+							<input class="form-control" type="date" required>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group"> <span class="form-label">Time</span>
+							<input class="form-control" type="time" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group"> <span class="form-label">Tables</span>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+							</select>
+							<span class="select-arrow"></span> </div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group"> <span class="form-label">People</span>
+							<select class="form-control">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+								<option>6</option>
+								<option>7</option>
+								<option>8</option>
+								<option>9</option>
+								<option>10</option>
+								<option>11</option>
+								<option>12</option>
+								<option>13</option>
+								<option>14</option>
+								<option>15</option>
+								<option>16</option>
+								<option>17</option>
+								<option>18</option>
+								<option>19</option>
+								<option>20</option>
+							</select>
+							<span class="select-arrow"></span> </div>
+					</div>
+				</div>
+				<div class="form-btn">
+					<button class="submit-btn">Check availability</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- InstanceEndEditable --> </div>
+<script>
+  feather.replace();
+</script>
 </body>
 <!-- InstanceEnd --></html>

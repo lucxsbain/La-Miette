@@ -1,208 +1,10 @@
-@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
-:root {
-	--primary: #f6d9ac;
-	--background: #fdeed8;
-	--button: #e5bb7b;
-	--hover: #aa8041;
-	--text: #483d2e;
-}
-body {
-	background: var(--background);
-	font-family: 'Open Sans', sans-serif;
-}
-/* Content */
-br {
-	margin-bottom: 100px;
-	font-size: 100px;
-	line-height: 100px;
-}
-hr {
-	height: 1px;
-	border-width: 0;
-	background-color: var(--hover);
-	width: 90%;
-	margin: 10px auto;
-}
-.content {
-	margin-left: 6rem;
-}
-.main {
-	border-radius: 10px;
-	overflow: hidden;
-	color: var(--text)
-}
-.header {
-	width: 100%;
-	height: 200px;
-	border-radius: 10px;
-}
-.booking-info {
-	float: left;
-	width: 47%;
-	font-size: 15px;
-	padding: 20px;
-	border-radius: 10px;
-	background: var(--primary);
-}
-.menu-container {
-	background: var(--primary);
-	font-size: 20px;
-	padding: 20px 0 70px;
-}
-.menu-header {
-	text-align: center;
-	font-size: 1.5em;
-}
-.menul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-.menul li {
-	display: block;
-	clear: both;
-}
-.menul .food-item {
-	float: left;
-	margin-left: 25%;
-}
-.menul .price {
-	float: right;
-	margin-right: 25%;
-}
-.menu-hr {
-	background-color: var(--background);
-	width: 60%;
-	margin: 50px auto 20px;
-}
-.about {
-	font-size: 20px;
-	text-align: center;
-	padding: 20px;
-	background: var(--primary);
-}
-.contact {
-	width: 47%;
-	background-color: var(--primary);
-	padding: 2px 10px;
-	position: absolute;
-}
-.map {
-	height: 90%;
-	width: 47%;
-	border-radius: 7px;
-}
-.full-map {
-	height: 98vh;
-	width: 100%;
-	border-radius: 10px;
-}
-.located {
-	text-align: center;
-	font-size: 20px;
-	background: var(--primary);
-	padding: 10px;
-}
-/* Booking */
-.booking-form {
-	width: 46.25%;
-	float: right;
-	background-color: var(--primary);
-	padding: 50px 20px;
-	border-radius: 10px;
-}
-
-.booking-form .form-group {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.booking-form .form-control {
-	background-color: var(--background);
-	border-radius: 4px;
-	border: none;
-	height: 40px;
-	color: var(--hover);
-	font-size: 14px;
-}
-
-.booking-form .form-control::-webkit-input-placeholder {
-	color: var(--hover);
-}
-
-.booking-form .form-control:-ms-input-placeholder {
-	color: var(--hover);
-}
-
-.booking-form .form-control::placeholder {
-	color: var(--hover);
-}
-
-.booking-form input[type="date"].form-control:invalid {
-	color: var(--hover);
-}
-
-.booking-form select.form-control {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-.booking-form select.form-control+.select-arrow {
-	position: absolute;
-	right: 0px;
-	bottom: 4px;
-	width: 32px;
-	line-height: 32px;
-	height: 32px;
-	text-align: center;
-	pointer-events: none;
-	color: var(--hover);
-	font-size: 14px;
-}
-
-.booking-form select.form-control+.select-arrow:after {
-	content: '\279C';
-	display: block;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
-}
-
-.booking-form .form-label {
-	display: inline-block;
-	color: var(--text);
-	font-weight: 700;
-	margin-bottom: 6px;
-	margin-left: 7px;
-}
-
-.booking-form .submit-btn {
-	display: inline-block;
-	color: var(--text);
-	background-color: var(--button);
-	font-weight: 700;
-	padding: 14px 30px;
-	border-radius: 4px;
-	border: none;
-	-webkit-transition: 0.2s all;
-	transition: 0.2s all;
-}
-
-.booking-form .submit-btn:hover,
-.booking-form .submit-btn:focus {
-	opacity: 0.9;
-	background: var(--hover);
-}
-/* Navigation */
 .navbar {
 	position: fixed;
-	background: var(--button);
+	background: #fff;
 	border-radius: 10px;
 	padding: 1rem 0;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.03);
-	margin-bottom: 0.5rem;
-	height: calc(100vh - 3rem);
 }
 .link {
 	position: relative;
@@ -211,7 +13,7 @@ hr {
 	justify-content: center;
 	height: 3.5rem;
 	width: 5.5rem;
-	color: var(--text);
+	color: #6a778e;
 	transition: 250ms ease all;
 }
 .link span {
@@ -221,14 +23,14 @@ hr {
 	margin-left: 1rem;
 	opacity: 0;
 	pointer-events: none;
-	color: var(--text);
-	background: var(--primary);
+	color: #406ff3;
+	background: #fff;
 	padding: 0.75rem;
 	transition: 250ms ease all;
 	border-radius: 17.5px;
 }
 .link:hover {
-	color: var(--background);
+	color: #fff;
 }
 .navbar:not(:hover) .link:focus span, .link:hover span {
 	opacity: 1;
@@ -249,7 +51,7 @@ hr {
 	left: 1rem;
 	width: 3.5rem;
 	height: 3.5rem;
-	background: var(--hover);
+	background: #406ff3;
 	border-radius: 17.5px;
 	transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
 }

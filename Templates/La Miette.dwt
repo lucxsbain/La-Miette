@@ -2,34 +2,32 @@
 <html>
 <head>
 <meta charset="utf-8">
-	<!-- TemplateBeginEditable name="title" -->
-	<title>La Miette</title>
-	<!-- TemplateEndEditable -->
-<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="title" -->
+<title>La Miette</title>
+<!-- TemplateEndEditable -->
+<link href="../CSS/style.css" rel="stylesheet" type="text/css">
+<!-- choose one --> 
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-	<div id="header">
-  <nav class="nav">
-			<ul>
-				<li><a href="home.html" title="Home">Home</a></li>
-				<li><a href="about.html" title="About">About</a></li>
-				<div class="dropdown">
-					<li class="dropbtn"><a href="menu.html" title="Menu">Menu</a></li>
-				  <div class="dropdown-content">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
-				  </div>
-				</div>
-				<li><a href="reservations.html" title="Reservations">Reservations</a></li>
-				<li><a href="locate.html" title="Locate Us">Locate Us</a></li>
-				<li><a href="contact.html" title="Contact" class="page">Contact</a></li>
-			</ul>
-	  </nav>
-</div>
+<nav class="navbar">
+	<ul class="menu">
+		<li class="item"><a href="../home.html" class="link"><i data-feather="home"></i><span>Home</span></a></li>
+		<li class="item"><a href="../menu.html" class="link"><i data-feather="menu"></i><span>Menu</span></a></li>
+		<li class="item"><a href="../about.html" class="link"><i data-feather="info"></i><span>About</span></a></li>
+		<li class="item"><a href="../locate.html" class="link"><i data-feather="map"></i><span>Locate Us</span></a></li>
+		<li class="item"><a href="../reservations.html" class="link"><i data-feather="bookmark"></i><span>Book</span></a></li>
+		<li class="item"><a href="#" class="link"><i data-feather="message-square"></i><span>Contact Us</span></a></li>
+	</ul>
+</nav>
+<div class="content">
+	<img class="header" src="../images/header.png" alt="Header">
 	<!-- TemplateBeginEditable name="content" -->
-
-	<!-- TemplateEndEditable -->
+	<div></div>
+	<!-- TemplateEndEditable --> </div>
+<script>
+  feather.replace();
+</script>
 </body>
 </html>

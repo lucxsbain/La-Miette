@@ -2,36 +2,34 @@
 <html><!-- InstanceBegin template="/Templates/La Miette.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-	<!-- InstanceBeginEditable name="title" -->
+<!-- InstanceBeginEditable name="title" -->
 	<title>La Miette</title>
 	<!-- InstanceEndEditable -->
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
+<!-- choose one --> 
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-	<div id="header">
-  <nav class="nav">
-			<ul>
-				<li><a href="home.html" title="Home">Home</a></li>
-				<li><a href="about.html" title="About">About</a></li>
-				<div class="dropdown">
-					<li class="dropbtn"><a href="menu.html" title="Menu">Menu</a></li>
-				  <div class="dropdown-content">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
-				  </div>
-				</div>
-				<li><a href="reservations.html" title="Reservations">Reservations</a></li>
-				<li><a href="locate.html" title="Locate Us">Locate Us</a></li>
-				<li><a href="contact.html" title="Contact" class="page">Contact</a></li>
-			</ul>
-	  </nav>
-</div>
+<nav class="navbar">
+	<ul class="menu">
+		<li class="item"><a href="home.html" class="link"><i data-feather="home"></i><span>Home</span></a></li>
+		<li class="item"><a href="menu.html" class="link"><i data-feather="menu"></i><span>Menu</span></a></li>
+		<li class="item"><a href="about.html" class="link"><i data-feather="info"></i><span>About</span></a></li>
+		<li class="item"><a href="locate.html" class="link"><i data-feather="map"></i><span>Locate Us</span></a></li>
+		<li class="item"><a href="reservations.html" class="link"><i data-feather="bookmark"></i><span>Book</span></a></li>
+		<li class="item"><a href="#" class="link"><i data-feather="message-square"></i><span>Contact Us</span></a></li>
+	</ul>
+</nav>
+<div class="content">
+	<img class="header" src="images/header.png" alt="Header">
 	<!-- InstanceBeginEditable name="content" -->
-<main>
+	<div class="main">
 		<iframe class="full-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d685.275794623644!2d144.98598192863273!3d-37.838400903846484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6429e3330e72b%3A0x1e7f78620a54128!2s57%20Toorak%20Rd%20West%2C%20South%20Yarra%20VIC%203141!5e0!3m2!1sen!2sau!4v1687227448148!5m2!1sen!2sau" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</main>
-	<!-- InstanceEndEditable -->
+	</div>
+	<!-- InstanceEndEditable --> </div>
+<script>
+  feather.replace();
+</script>
 </body>
 <!-- InstanceEnd --></html>

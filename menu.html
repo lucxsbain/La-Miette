@@ -2,34 +2,64 @@
 <html><!-- InstanceBegin template="/Templates/La Miette.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-	<!-- InstanceBeginEditable name="title" -->
+<!-- InstanceBeginEditable name="title" -->
 <title>Menu - La Miette</title>
-	<!-- InstanceEndEditable -->
+<!-- InstanceEndEditable -->
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
+<!-- choose one --> 
+<script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
-	<div id="header">
-  <nav class="nav">
-			<ul>
-				<li><a href="home.html" title="Home">Home</a></li>
-				<li><a href="about.html" title="About">About</a></li>
-				<div class="dropdown">
-					<li class="dropbtn"><a href="menu.html" title="Menu">Menu</a></li>
-				  <div class="dropdown-content">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
-				  </div>
-				</div>
-				<li><a href="reservations.html" title="Reservations">Reservations</a></li>
-				<li><a href="locate.html" title="Locate Us">Locate Us</a></li>
-				<li><a href="contact.html" title="Contact" class="page">Contact</a></li>
-			</ul>
-	  </nav>
-</div>
+<nav class="navbar">
+	<ul class="menu">
+		<li class="item"><a href="home.html" class="link"><i data-feather="home"></i><span>Home</span></a></li>
+		<li class="item"><a href="menu.html" class="link"><i data-feather="menu"></i><span>Menu</span></a></li>
+		<li class="item"><a href="about.html" class="link"><i data-feather="info"></i><span>About</span></a></li>
+		<li class="item"><a href="locate.html" class="link"><i data-feather="map"></i><span>Locate Us</span></a></li>
+		<li class="item"><a href="reservations.html" class="link"><i data-feather="bookmark"></i><span>Book</span></a></li>
+		<li class="item"><a href="#" class="link"><i data-feather="message-square"></i><span>Contact Us</span></a></li>
+	</ul>
+</nav>
+<div class="content">
+	<img class="header" src="images/header.png" alt="Header">
 	<!-- InstanceBeginEditable name="content" -->
-	<main>menu</main>
-	<!-- InstanceEndEditable -->
+	<div class="main">
+		<div class="menu-container">
+			<ul class="menul">
+				<li class="menu-header">Starters</li>
+				<li><span class="food-item">French onion soup gratinée</span><span class="price">$10</span></li>
+				<li><span class="food-item">Escargots de Bourgogne</span><span class="price">$12</span></li>
+				<li><span class="food-item">Foie gras terrine with fig compote</span><span class="price">$16</span></li>
+				<li><span class="food-item">Charcuterie board with cured meats, pâté, and cornichons</span><span class="price">$18</span></li>
+				<li><span class="food-item">Tuna tartare with avocado and soy sauce</span><span class="price">$14</span></li>
+				<hr class="menu-hr">
+				<li class="menu-header">Mains</li>
+				<li><span class="food-item">Steak frites with herb butter</span><span class="price">$28</span></li>
+				<li><span class="food-item">Coq au vin with mashed potatoes</span><span class="price">$22</span></li>
+				<li><span class="food-item">Bouillabaisse with rouille and croutons</span><span class="price">$26</span></li>
+				<li><span class="food-item">Ratatouille with quinoa and goat cheese</span><span class="price">$18</span></li>
+				<li><span class="food-item">Croque-monsieur with mixed greens</span><span class="price">$14</span></li>
+				<hr class="menu-hr">
+				<li class="menu-header">Desserts</li>
+				<li><span class="food-item">Crème brûlée</span><span class="price">$9</span></li>
+				<li><span class="food-item">Tarte Tatin with vanilla ice cream</span><span class="price">$10</span></li>
+				<li><span class="food-item">Chocolate mousse</span><span class="price">$8</span></li>
+				<li><span class="food-item">Profiteroles with caramel sauce</span><span class="price">$12</span></li>
+				<li><span class="food-item">Cheese plate with baguette and fruit</span><span class="price">$16</span></li>
+				<hr class="menu-hr">
+				<li class="menu-header">Beverages</li>
+				<li><span class="food-item">Selection of French wines by the glass or bottle</span><span class="price">$10-$100</span></li>
+				<li><span class="food-item">Cocktails such as a French 75 or Kir Royale</span><span class="price">$12-$15</span></li>
+				<li><span class="food-item">Beer and cider options</span><span class="price">$6-$8</span></li>
+				<li><span class="food-item">Espresso and coffee drinks</span><span class="price">$4-$6</span></li>
+				<li><span class="food-item">Selection of teas and herbal infusions</span><span class="price">$4-$6</span></li>
+			</ul>
+		</div>
+	</div>
+	<!-- InstanceEndEditable --> </div>
+<script>
+  feather.replace();
+</script>
 </body>
 <!-- InstanceEnd --></html>
